@@ -1,0 +1,340 @@
+body {
+    background: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    word-break: break-word;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.innerBody {
+    margin: auto;
+    background: #222;
+    min-height: 400px;
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.7);
+
+}
+
+@media only screen and (max-width: 767px) {
+    .innerBody {
+        width: 96%;
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .innerBody {
+        width: 72%;
+        margin-top: 24px;
+    }
+}
+
+
+/* header start */
+
+.header {
+    line-height: 60px;
+    background: #333;
+    height: 60px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    height: 60px;
+    width: 90%;
+
+}
+
+.header a {
+    margin: 0px;
+    text-decoration: none;
+    display: inline-block;
+    height: 60px;
+    color: rgb(134,117,83);
+    letter-spacing: 0.5px;
+}
+
+
+
+.logo {
+    height: 60px;
+    display: inline;
+    margin: 0px;
+}
+
+nav a {
+    display: inline;
+}
+
+/* header end */
+
+/* carousel start */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    background: hsl(182,30%,100%);
+    text-align: left;
+    padding: 0 10vw 0 10vw;
+    background-image: url("/img/hearthstone.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("/img/hearthstone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+
+}
+
+
+.carousel-title {
+    margin: 16px 0 0 0;
+    font-size: 3em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.carousel-subtext {
+    font-size: 1.6em;
+    margin: 0;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.carousel-button {
+    padding: 12px;
+    background: #666;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel {
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .carousel {
+        height: 80vh;
+    }
+}
+
+/* carousel end */
+
+.sections {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.section
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5%;
+
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1);
+}
+
+.section-title{
+    font-size: 1.3em;
+}
+
+.section p{
+    line-height: 1.4em;
+}
+
+.section-inner {
+    background: rgba(0,0,0,0.5);
+    padding: 8px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .section {
+        width: 50%;
+        height: 60vh;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+/* intro start */
+.introduction {
+    color: #fff;
+
+    background-image: url("/img/vr2.jpg");
+    background-size: cover;
+    background-position: 20% 3%;
+    background-repeat: no-repeat;
+}
+
+.intro-title{
+    font-size: 1.6em;
+}
+
+
+.game-programming {
+    background-image: url("/img/game-code.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.digital-arts {
+    background-image: url("/img/graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.music-audio {
+    background-image: url("/img/electronic-music.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    color: #fff;
+}
+
+.storytelling {
+    background-image: url("/img/daktilo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: #fff;
+}
+
+.marketing {
+    background-image: url("/img/marketing-graph.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    color: #fff;
+}
+
+/* intro end */
+
+/* contact start */
+
+.contact {
+    color: rgba(134,117,83,.8);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact nav a {
+    font-size: 1.1em;
+    color: rgba(134,117,83,.7);
+    text-decoration: none;
+    margin: 16px;
+    line-height: 32px;
+}
+.contact nav a:hover {
+    color: rgba(134,117,83,1);
+    text-decoration: none;
+    margin: 16px;
+    line-height: 32px;
+}
+
+/* contact end */
+
+/* product start */
+
+.product {
+    min-height: 30vh;
+    color: #fff;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product:nth-child(2n+1) {
+    background: #222;
+}
+
+.product:nth-child(2n) {
+    background: #333;
+}
+
+.product-imageDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+.product-infoDiv {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 60%;
+}
+
+.product-image {
+    width: 100%;
+    max-height: 90%;
+}
+
+.product-links {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.product-link {
+    width: 100%;
+    fill: #fff;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.product-author {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.product-description {
+    font-weight: 400;
+    font-style: normal;    
+}
+/* product end */

@@ -1,0 +1,38 @@
+<% include ./partials/header.ejs %>
+<div class="products">
+<% products.forEach(function(product){ %>
+    <div class="product">
+        <div class="product-imageDiv">
+            <img class="product-image" src="<%= product.imagelink %>" alt="<%= product.name %>" />
+        </div>
+        <div class="product-infoDiv">
+            <div>
+                <span class="product-name"><%= product.name %></span><br/>
+                <span class="product-author"><%= product.author %></span>
+                <p class="product-description"><%= product.description %></p>
+            </div>
+        </div>
+        <div class="product-links">
+            <nav>
+                <% if(product.link1.indexOf('play.google') !== -1) { %>
+                    <a href="<%= product.link1 %>"><img class="product-link" src="/img/playstore.png"></a>
+                <% } else if(product.link1.indexOf('itunes.apple') !== -1) { %>
+                    <a href="<%= product.link1 %>"><img class="product-link" src="/img/appstore.png"></a>
+                <% } else { %>
+                    <a href="<%= product.link1 %>"><img class="product-link" src="/img/link.svg"></a>
+                <% } %>
+                <% if(product.link2 !== '') { %>
+                    <% if(product.link2.indexOf('play.google') !== -1) { %>
+                        <a href="<%= product.link1 %>"><img class="product-link" src="/img/playstore.png"></a>
+                    <% } else if(product.link2.indexOf('itunes.apple') !== -1) { %>
+                        <a href="<%= product.link1 %>"><img class="product-link" src="/img/appstore.png"></a>
+                    <% } else { %>
+                        <a href="<%= product.link1 %>"><img class="product-link" src="/img/link.svg"></a>
+                    <% } %>
+                <% } %>
+            </nav>
+        </div>
+    </div>
+<% }) %>
+</div>
+<% include ./partials/footer.ejs %>
