@@ -4,7 +4,7 @@ const ejs = require('ejs');
 var bodyParser = require('body-parser');
 const request = require('request');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static('public', { maxAge:'1d' }));
 app.use( bodyParser.json());
@@ -32,4 +32,4 @@ app.get('*',(req,res)=>{
 });
 
 
-app.listen(PORT,()=>{console.log("listenin on port 3000");})
+app.listen(PORT,()=>{console.log("listenin on port "+PORT);})
