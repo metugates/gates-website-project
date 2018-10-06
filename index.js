@@ -15,6 +15,10 @@ app.get('/',(req,res)=>{
     res.render('index.ejs');
 });
 
+app.get('/hakkinda',(req,res)=>{
+    res.render('introduction.ejs');
+});
+
 app.get('/urunler',(req,res)=>{
     request('http://localhost:3002/products', function (error, response, body) {
         if(error){

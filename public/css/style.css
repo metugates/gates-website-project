@@ -68,9 +68,15 @@ body {
     margin: 0px;
 }
 
+.navlinks a {
+  margin-left: 20px;
+  float: right;
+}
+
 nav a {
     display: inline;
 }
+
 
 /* header end */
 
@@ -406,3 +412,36 @@ nav a {
     font-style: normal;
 }
 /* product end */
+
+/* intro-page start */
+
+.intro-page{
+  background: url('/img/arcade.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro-content {
+  color: #fff;
+  padding: 16px;
+  background: rgba(0,0,0,0.5);
+}
+
+.intro-page-title {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.infotext {
+  font-size: 1.2em;
+}
+
+.aimlist {
+  list-style-position: outside;
+}
+
+
+
+
+/* intro-page end */
