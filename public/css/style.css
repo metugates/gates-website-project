@@ -15,7 +15,6 @@ body {
     -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.7);
     box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.7);
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -38,23 +37,36 @@ body {
 .header {
     line-height: 60px;
     background: #333;
-    height: 60px;
+}
+
+@media screen and (min-width: 601px) {
+    .header {
+        height: 60px;
+    }
+    .header-inner {
+        height: 60px;
+    }
+    .header a {
+        height: 60px;
+    }
 }
 
 .header-inner {
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
-    height: 60px;
     width: 90%;
-
+}
+@media screen and (max-width: 600px) {
+    .header-inner{
+        flex-direction: column;
+    }
 }
 
 .header a {
     margin: 0px;
     text-decoration: none;
     display: inline-block;
-    height: 60px;
     color: rgb(177,156,100);
     letter-spacing: 0.5px;
     font-size: 1.1em;
@@ -67,10 +79,64 @@ body {
     display: inline;
     margin: 0px;
 }
-
-nav a {
-    display: inline;
+.header-left {
+    display: flex;
+    justify-content: space-between;
 }
+
+.header-right{
+    float: right;
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    .header-left {
+        height: 60px;
+    }
+    .header-right{
+        display: none;
+    }
+    .header-inner.responsive .header-right{
+        display: block;
+    }
+}
+
+.nav-links {
+    overflow: hidden;
+}
+
+.nav-links a {
+    display: inline;
+    margin: 8px;
+}
+
+.header-left .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links a {display: none;}
+}
+
+@media screen and (max-width: 600px) {
+    .header-right {
+        float: right;
+    }
+    .header-left a.icon {
+        float: right;
+        display: block;
+    }
+    .nav-links.responsive {position: relative;}
+    .nav-links.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-links.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
 /* header end */
 
@@ -406,3 +472,22 @@ nav a {
     font-style: normal;
 }
 /* product end */
+
+/* about start */
+.about {
+    color: #ddd;
+    background-image: url("/img/hearthstone.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("/img/hearthstone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+.about-content {
+    padding: 8px;
+    font-size: 1.1em;
+    background: rgba(0,0,0,0.5);
+}
+.about ul{
+    list-style-type: square;
+}
+/* about end */

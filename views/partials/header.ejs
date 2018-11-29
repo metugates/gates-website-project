@@ -5,17 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>METU GATES</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
         <div class="innerBody" >
         <div class="header" >
-            <div class="header-inner" >
+            <div id="header-inner" class="header-inner" >
                 <div class="header-left" >
                     <a href="/"><img class="logo" src="/img/logo.png" alt="METU GATES"/></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
                 <div class="header-right" >
-                    <nav>
+                    <nav class="nav-links" id="navbar">
+                        <a href="/hakkimizda">Hakkımızda</a>
                         <a href="/urunler">Ürettiklerimiz</a>
+                        
                     </nav>
                 </div>
             </div>

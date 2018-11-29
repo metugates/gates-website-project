@@ -27,6 +27,10 @@ app.get('/urunler',(req,res)=>{
 
 });
 
+app.get('/hakkimizda',(req,res)=>{
+    res.render('about.ejs');
+})
+
 app.get('*',(req,res)=>{
     res.status(404).send('Not Found');
 });
